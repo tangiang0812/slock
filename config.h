@@ -3,8 +3,8 @@ static const char *user  = "gnaig";
 static const char *group = "gnaig";
 
 static const char *colorname[NUMCOLS] = {
+  [BACKGROUND] = "white",
 	[INIT] =   "#292d3e",     /* after initialization */
-	[BACKGROUND] =   "black",     /* after initialization */
 	[INPUT] =  "#82aaff",   /* during input */
 	[FAILED] = "#ff5370",   /* wrong password */
 	[CAPS] = "#ffcb6b",         /* CapsLock on */
@@ -31,3 +31,12 @@ static XRectangle rectangles[9] = {
 	{ 9,	4,	1,	2 },
 	{ 11,	4,	1,	2 },
 };
+
+/*Enable blur*/
+#define BLUR
+/*Set blur radius*/
+static const int blurRadius=10;
+/*Enable Pixelation*/
+//#define PIXELATION
+/*Set pixelation radius*/
+static const int pixelSize=0;
